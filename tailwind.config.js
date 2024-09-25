@@ -8,6 +8,19 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
+      colors: {
+        'main-text': '#f0f6fc',
+        'secondary-text': '#9198a1',
+        'main-bg': '#0d1117',
+        'secondary-bg': '#212830',
+        'header-bg': '#010409',
+        'counter-bg': '#2f3742',
+        'main-border': '#3d444d',
+        'languageColor': '#3178c6',
+      },
     },
   },
   plugins: [],
