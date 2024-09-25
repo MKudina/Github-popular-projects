@@ -5,6 +5,7 @@ export const formatCounter = (count: number) => {
 
 export const dataFormat = (data: string) => {
     const date = new Date(data);
+    console.log(data)
     const formattedDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
     return formattedDate
 }

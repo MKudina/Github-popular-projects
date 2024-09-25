@@ -30,7 +30,7 @@ const RepoStats: React.FC<RepoStatsProps> = ({ type, count }) =>{
     }
 
     return (
-        <div className='h-7 flex items-center text-sm border border-main-border bg-secondary-bg rounded'>
+        <div className='w-[150px] h-7 flex items-center text-sm border border-main-border bg-secondary-bg rounded'>
             {icon}
             {label}
             <span className='px-[6px] ml-2 mr-3 bg-counter-bg rounded-full' title={count.toString()}>{formatCounter(count)}</span>

@@ -32,7 +32,7 @@ const LanguagesBar: React.FC<LanguagesBarProps> = ({ data }) => {
   };
 
   return (
-    <div className='max-w-[500px] flex flex-col gap-3'>
+    <div className='max-w-[500px] mx-4 sm:mx-0 flex flex-col gap-3'>
         <div className="w-full h-2 flex rounded-full border-gray-300 overflow-hidden">
           {topLanguages.map((_, index) => {
             const { percentage } = topLanguages[index];

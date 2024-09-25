@@ -24,19 +24,19 @@ const RepoItem: React.FC<RepoItemProps> = ({ repo }) => {
 
     return (
         <li className='w-full py-6 first:border-t border-b border-main-border font-medium repo-item'>
-            <div className='flex flex-row justify-between'>
+            <div className='flex flex-col sm:flex-row items-center sm:justify-between gap-4'>
                 <h2 className='text-xl text-blue-500 rounded-t-md'>
                     <Link to={`/${repo.owner.login}/${repo.name}`} >{repo.name}</Link>
                 </h2>
                 <RepoStats type='star' count={repo.stargazers_count} />
             </div>
-            <div className='w-full mt-4 flex flex-row gap-4 bottom-0 text-xs font-medium'>
+            <div className='w-full mt-4 flex flex-col sm:flex-row items-center gap-4 bottom-0 text-xs font-medium'>
                 <div className='flex items-center gap-1'>
                     <div className='w-3 h-3 bg-languageColor rounded-full'></div>
                     <span className='text-secondary-text'>{repo.language}</span>
                 </div>
                 <span className='text-secondary-text'>{`Updated on ${dataFormat(repo.updated_at)}`}</span>
-                <a href={repo.html_url} target="_blank" className='ml-auto text-secondary-text hover:text-blue-500 hover:underline' rel="noopener noreferrer">
+                <a href={repo.html_url} target="_blank" className='sm:ml-auto text-secondary-text hover:text-blue-500 hover:underline' rel="noopener noreferrer">
                     view project
                 </a>
             </div>
