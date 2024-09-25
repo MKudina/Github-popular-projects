@@ -27,7 +27,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      favicon: './src/images/logo.svg'
     }),
   ],
   mode: 'development',
@@ -37,5 +36,6 @@ module.exports = {
     compress: true,
     port: 8080,
     open: true,
+    allowedHosts: "all",
   },
 };
